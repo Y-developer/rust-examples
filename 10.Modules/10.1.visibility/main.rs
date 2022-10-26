@@ -1,23 +1,25 @@
-// A module named `my_mod`
+// module එකක් සාදන ආකරය.
+// මෙම module එකේ නම my_mod වේ.
 mod my_mod {
-    // Items in modules default to private visibility.
+    // මෙය private අවස්ථාවේ පවතින item එකකි.
+    // එම නිසා module එකට පිට සිට access කල නොහැක.
     fn private_function() {
         println!("called `my_mod::private_function()`");
     }
 
-    // Use the `pub` modifier to override default visibility.
+    // මෙය public අවස්ථාවේ පවතින item එකකි.
+    // එම නිසා module එකට පිටින් සිට access කල හැක.
     pub fn function() {
         println!("called `my_mod::function()`");
     }
 
-    // Items can access other items in the same module,
-    // even when private.
+    // private වුවත් public වුවත් module එක තුල සිට ඹ්නෑම item එකකට access කල හැක.
     pub fn indirect_access() {
         print!("called `my_mod::indirect_access()`, that\n> ");
         private_function();
     }
 
-    // Modules can also be nested
+    // module එකක් තුල තවත් module එකක් සෑදීමේ හැකියාව ඇත.
     pub mod nested {
         pub fn function() {
             println!("called `my_mod::nested::function()`");
@@ -96,7 +98,7 @@ fn main() {
 
     // pub(in path) items can only be called from within the module specified
     // Error! function `public_function_in_my_mod` is private
-    //my_mod::nested::public_function_in_my_mod();
+    // my_mod::nested::public_function_in_my_mod();
     // TODO ^ Try uncommenting this line
 
     // Private items of a module cannot be directly accessed, even if
