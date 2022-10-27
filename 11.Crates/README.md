@@ -18,7 +18,7 @@ rustc some_file.rs
 
 crate එක library එකක් බවට compile කිරීමට `--crate-type` flag එකට `lib` ලබා දිය යුතුය.
 ```
-rustc some_file.rs --crate-type lib
+rustc some_file.rs --crate-type=lib
 ```
 
 package එකක් තුල අන්තර්ගත කල හැක්කේ එක් library crate එකක් පමණි. නමුත් binary crate කිහිපයක් package එක්ක තුල අන්තර්ගත කල හැක.
