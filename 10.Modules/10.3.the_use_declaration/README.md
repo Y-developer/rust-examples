@@ -9,7 +9,8 @@ use keyword එක භාවිතා කරන ආකාරය මෙම පා
 ├── mod deeply
 │   └── pub mod nested
 │       ├── pub fn function_one()
-│       └── pub fn function_two()
+│       ├── pub fn function_two()
+│       └── pub fn function_three()
 └── fn main()
 ```
 
