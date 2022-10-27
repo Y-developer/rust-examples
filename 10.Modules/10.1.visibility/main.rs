@@ -30,21 +30,20 @@ mod my_mod {
             println!("called `my_mod::nested::private_function()`");
         }
 
-        // Functions declared using `pub(in path)` syntax are only visible
-        // within the given path. `path` must be a parent or ancestor module
+        // `pub(in path)` syntax එක භාවිතා කල විට ලබා දෙන path එකට පමණක් මෙය visible වේ.
+        // ලබා දෙන path එක අනිවාර්යයෙන්ම parent එකක් හෝ ඉහලින් පිහිටි parent කෙනෙක් විය යුතුය.
         pub(in crate::my_mod) fn public_function_in_my_mod() {
             print!("called `my_mod::nested::public_function_in_my_mod()`, that\n> ");
             public_function_in_nested();
         }
 
-        // Functions declared using `pub(self)` syntax are only visible within
-        // the current module, which is the same as leaving them private
+        // `pub(self)` syntax එක භාවිතා කල විට current module එකකට පමණක් මෙය visible වේ.
+        // මෙය private visibility එකට සමානය.
         pub(self) fn public_function_in_nested() {
             println!("called `my_mod::nested::public_function_in_nested()`");
         }
 
-        // Functions declared using `pub(super)` syntax are only visible within
-        // the parent module
+        // `pub(super)` syntax එක භාවිතා කල විට parent module එකට පමණක් මෙය visible වේ.
         pub(super) fn public_function_in_super_mod() {
             println!("called `my_mod::nested::public_function_in_super_mod()`");
         }
@@ -57,20 +56,19 @@ mod my_mod {
         nested::public_function_in_super_mod();
     }
 
-    // pub(crate) makes functions visible only within the current crate
+    // `pub(super)` syntax එක භාවිතා කල විට current crate එකට visible වේ.
     pub(crate) fn public_function_in_crate() {
         println!("called `my_mod::public_function_in_crate()`");
     }
 
-    // Nested modules follow the same rules for visibility
+    // මෙය private module එකකකි.
     mod private_nested {
         #[allow(dead_code)]
         pub fn function() {
             println!("called `my_mod::private_nested::function()`");
         }
 
-        // Private parent items will still restrict the visibility of a child item,
-        // even if it is declared as visible within a bigger scope.
+        // මෙය pub(create) වුවත් private module එකක් තුල ඇති නිසා ඊට පිටින් සිට call කල නොහැක.
         #[allow(dead_code)]
         pub(crate) fn restricted_function() {
             println!("called `my_mod::private_nested::restricted_function()`");
@@ -82,6 +80,7 @@ fn function() {
     println!("called `function()`");
 }
 
+// module එකේ ඇති functions වලට call කිරීම main function එකේ සිට සිදු කරයි.
 fn main() {
     // Modules allow disambiguation between items that have the same name.
     function();
@@ -94,11 +93,11 @@ fn main() {
     my_mod::call_public_function_in_my_mod();
 
     // pub(crate) items can be called from anywhere in the same crate
-    my_mod::public_function_in_crate();
+    // my_mod::public_function_in_crate();
 
     // pub(in path) items can only be called from within the module specified
     // Error! function `public_function_in_my_mod` is private
-    // my_mod::nested::public_function_in_my_mod();
+    //my_mod::nested::public_function_in_my_mod();
     // TODO ^ Try uncommenting this line
 
     // Private items of a module cannot be directly accessed, even if
