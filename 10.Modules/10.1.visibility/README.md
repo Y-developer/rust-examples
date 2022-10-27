@@ -3,6 +3,36 @@
 නමුත් `pub` modifire එක භාවිතා කිරීමෙන් මෙම items **public visibility** අවස්ථාවට පත් කල හැක.\
 module එකට පිටින් සිට access කල හැක්කේ public items පමණි.
 
+|syntax|description|
+|-|-|
+|pub(self)|current module එකට පමණක් visible වේ. private එකකට සමාන වේ.|
+|pub(super)|parent module එකට පමණක් visible වේ.|
+|pub(in crate::*my_mod*)|pub(in path) ලබා දෙන path එකට පමණක් මෙය visible වේ. ලබා දෙන path එක අනිවාර්යයෙන්ම parent එකක් හෝ ඉහලින් පිහිටි parent කෙනෙක් විය යුතුය.|
+|pub(crate)|crate එකට පමණක් visible වේ.|
+|pub|‍ඕනෑම ස්ථානයකට visible වේ.|
+
+## Item structure in example
+```rust
+.
+├── mod my_mod
+│   ├── fn private_function()
+│   ├── pub fn function()
+│   ├── pub fn indirect_access()
+│   ├── pub mod nested
+│   │   ├── pub fn function()
+│   │   ├── fn private_function()
+│   │   ├── pub(in crate::my_mod) fn public_function_in_my_mod()
+│   │   ├── pub(self) fn public_function_in_nested()
+│   │   └── pub(super) fn public_function_in_super_mod()
+│   ├── pub fn call_public_function_in_my_mod()
+│   ├── pub(crate) fn public_function_in_crate()
+│   └── mod private_nested
+│       ├── pub fn function()
+│       └── pub(crate) fn restricted_function()
+├── fn function()
+└── fn main()
+```
+
 ```rust
 
 // module එකක් සාදන ආකරය.
@@ -37,21 +67,20 @@ mod my_mod {
             println!("called `my_mod::nested::private_function()`");
         }
 
-        // Functions declared using `pub(in path)` syntax are only visible
-        // within the given path. `path` must be a parent or ancestor module
+        // `pub(in path)` syntax එක භාවිතා කල විට ලබා දෙන path එකට පමණක් මෙය visible වේ.
+        // ලබා දෙන path එක අනිවාර්යයෙන්ම parent එකක් හෝ ඉහලින් පිහිටි parent කෙනෙක් විය යුතුය.
         pub(in crate::my_mod) fn public_function_in_my_mod() {
             print!("called `my_mod::nested::public_function_in_my_mod()`, that\n> ");
             public_function_in_nested();
         }
 
-        // Functions declared using `pub(self)` syntax are only visible within
-        // the current module, which is the same as leaving them private
+        // `pub(self)` syntax එක භාවිතා කල විට current module එකකට පමණක් මෙය visible වේ.
+        // මෙය private visibility එකට සමානය.
         pub(self) fn public_function_in_nested() {
             println!("called `my_mod::nested::public_function_in_nested()`");
         }
 
-        // Functions declared using `pub(super)` syntax are only visible within
-        // the parent module
+        // `pub(super)` syntax එක භාවිතා කල විට parent module එකට පමණක් මෙය visible වේ.
         pub(super) fn public_function_in_super_mod() {
             println!("called `my_mod::nested::public_function_in_super_mod()`");
         }
@@ -64,7 +93,7 @@ mod my_mod {
         nested::public_function_in_super_mod();
     }
 
-    // pub(crate) makes functions visible only within the current crate
+    // `pub(super)` syntax එක භාවිතා කල විට current crate එකට visible වේ.
     pub(crate) fn public_function_in_crate() {
         println!("called `my_mod::public_function_in_crate()`");
     }
