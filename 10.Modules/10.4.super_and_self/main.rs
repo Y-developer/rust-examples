@@ -1,21 +1,3 @@
-# 10.4. super and self
-මෙම කොටසින් super හා self keyword භාවිතා කරන ආකාරය ඉගැන්වේ. 
-## Item structure in example
-```rust
-.
-├── fn function()
-├── mod cool
-│   └── pub fn function()
-├── mod my
-│   ├── fn function()
-│   ├── mod cool
-│   │   └── pub fn function()
-│   └── pub fn indirect_call()
-└── fn main()
-```
-
-## Example
-```rust
 fn function() {
     println!("called `function()`");
 }
@@ -65,4 +47,3 @@ mod my {
 fn main() {
     my::indirect_call();
 }
-```
