@@ -12,5 +12,3 @@
 codes ඒවායේ ධූරාවලීන් අනුව කොටස් වලට බෙදීමට modules භාවිතා කරයි.\
 එසේම codes වල public / private භාවය පහසුවෙන් modules භාවිතයෙන් කලමනාකරණය කල හැක. \
 modules logical unit එකක් ලෙස හැදින්විය හැක.
-
-

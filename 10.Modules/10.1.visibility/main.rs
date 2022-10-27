@@ -93,7 +93,7 @@ fn main() {
     my_mod::call_public_function_in_my_mod();
 
     // pub(crate) items can be called from anywhere in the same crate
-    // my_mod::public_function_in_crate();
+    my_mod::public_function_in_crate();
 
     // pub(in path) items can only be called from within the module specified
     // Error! function `public_function_in_my_mod` is private
