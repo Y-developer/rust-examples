@@ -1,19 +1,3 @@
-# 10.2. Struct visibility
-
-පහත ආකාරයට Structs වලට අලුත් object එකක් සෑදීමට හැකි වුවත් එය කුමක් දැයි බැලීමට නොහැකි වන සේ සකස් කල හැක
-
-## Item structure in example
-```rust
-.
-├── mod my
-│   ├── pub struct OpenBox<T>
-│   ├── pub struct ClosedBox<T>
-│   └── impl<T> ClosedBox<T>
-│       └── pub fn new(contents: T) -> ClosedBox<T>
-└── fn main
-```
-
-```rust
 mod my {
     // public structure එකක් තුල ඇති public field එකක් (generic type `T`)
     pub struct OpenBox<T> {
@@ -57,5 +41,3 @@ fn main() {
     //println!("The closed box contains: {}", _closed_box.contents);
     // TODO ^ Try uncommenting this line
 }
-
-```
