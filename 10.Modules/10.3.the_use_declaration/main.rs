@@ -1,20 +1,3 @@
-# 10.3. The use declaration
-
-use keyword එක භාවිතා කරන ආකාරය මෙම පාඩමින් ඉගැන්වේ.
-
-## Item structure in example
-```rust
-.
-├── fn function()
-├── mod deeply
-│   └── pub mod nested
-│       ├── pub fn function_one()
-│       └── pub fn function_two()
-└── fn main()
-```
-
-## Example
-```rust
 // Bind the `deeply::nested::function` path to `other_function`.
 use deeply::nested::{
     function_one as my_function_one,
@@ -61,5 +44,3 @@ fn main() {
 
     function();
 }
-```
-
