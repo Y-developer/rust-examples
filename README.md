@@ -25,6 +25,8 @@ https://www.rust-lang.org/tools/install \
     4.  [super and self](10.Modules/10.4.super_and_self/README.md)
     5.  [File hierarchy](10.Modules/10.5.file_hierarchy/README.md)
 11. [Crates](11.Crates/README.md)
+    1.  [Creating a Library](11.Crates/11.1.Creating_a_library/README.md)
+    2.  [Using a Library](11.Crates/11.2.Using_a_library/README.md)
 12. [Cargo](12.Cargo/README.md)
 13. [Attributes](13.Attributes/README.md)
 14. [Generics](14.Generics/README.md)
