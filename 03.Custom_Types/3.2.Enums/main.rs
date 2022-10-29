@@ -1,9 +1,3 @@
-# 3.2. Enums
-
-## Enums
-enum keyword එක මගින් විවිධ වර්ගවල data type collection එකක් සෑදීමට ඉඩ සලසයි. structure එකක් ලෙස වලංගු වන ඕනෑම එකක් මෙහිදීද වලංගු වේ.
-
-```rust
 // Create an `enum` to classify a web event. Note how both
 // names and type information together specify the variant:
 // `PageLoad != PageUnload` and `KeyPress(char) != Paste(String)`.
@@ -49,22 +43,3 @@ fn main() {
     inspect(load);
     inspect(unload);
 }
-```
-
-## Type aliases
-enum එක දිගින් වැඩි නම් ඒ සදහා වෙනත් නමක් ආදේශ කල හැක. 
-```rust
-enum VeryVerboseEnumOfThingsToDoWithNumbers {
-    Add,
-    Subtract,
-}
-
-// Creates a type alias
-type Operations = VeryVerboseEnumOfThingsToDoWithNumbers;
-
-fn main() {
-    // We can refer to each variant via its alias, not its long and inconvenient
-    // name.
-    let x = Operations::Add;
-}
-```
