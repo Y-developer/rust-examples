@@ -3,6 +3,8 @@
 02.Primitives/2.2.Tuples/main
 02.Primitives/2.3.Arrays_and_Slices/main
 
+03.Custom_Types/3.1.Structures/main
+
 10.Modules/10.1.visibility/main
 10.Modules/10.2.struct_visibility/main
 10.Modules/10.3.the_use_declaration/main
@@ -12,4 +14,3 @@
 11.Crates/11.1.Creating_a_library/libapple.rlib
 11.Crates/11.1.Creating_a_library/libsome_file.rlib
 11.Crates/11.2.Using_a_library/my_exe
-
