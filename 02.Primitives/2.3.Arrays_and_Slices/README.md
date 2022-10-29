@@ -52,6 +52,19 @@ let slice_part: &[i32] = &array_3[3..7];
 println!("slice_part is: {:?}", slice_part);
 // slice_part is: [16, 25, 36, 49]
 ```
+පහත ආකාරයටද array එකක් slice කිරීම සිදුකල හැක.
+```rust
+let playground: [char; 10] = ['p','l','a','y','g','r','o','u','n','d'];
+let playgorund_slice: &[char] = &playground[..];
+let gorund_slice: &[char] = &playground[4..];
+let play_slice: &[char] = &playground[..4];
+println!("playground slice is : {:?}", playgorund_slice);
+println!("ground slice is : {:?}", gorund_slice);
+println!("play slice is : {:?}", play_slice);
+// playground slice is : ['p', 'l', 'a', 'y', 'g', 'r', 'o', 'u', 'n', 'd']
+// ground slice is : ['g', 'r', 'o', 'u', 'n', 'd']
+// play slice is : ['p', 'l', 'a', 'y']
+```
 
 slice එකක length එක හා index එකක් භාවිතා කර element එකක් ලබා ගැනීම array එකක ආකාරයටම සිදුකල හැක.
 ```rust
