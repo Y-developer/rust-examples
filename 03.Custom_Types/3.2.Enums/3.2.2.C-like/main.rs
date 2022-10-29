@@ -1,8 +1,3 @@
-# 3.2.2. C-like
-
-c වල මෙන් enum භාවිතා කල හැක. 
-
-```rust
 // enum with implicit discriminator (starts at 0)
 enum Number {
     Zero,
@@ -25,4 +20,3 @@ fn main() {
     println!("roses are #{:06x}", Color::Red as i32);
     println!("violets are #{:06x}", Color::Blue as i32);
 }
-```

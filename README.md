@@ -18,7 +18,7 @@ https://www.rust-lang.org/tools/install \
     1.  [Structures](03.Custom_Types/3.1.Structures/README.md)
     2.  [Enums](03.Custom_Types/3.2.Enums/README.md)
         1.  [use](03.Custom_Types/3.2.Enums/3.2.1.use/README.md)
-        2.  [C-like]<!--(03.Custom_Types/3.2.Enums/3.2.2.C-like/README.md)-->
+        2.  [C-like](03.Custom_Types/3.2.Enums/3.2.2.C-like/README.md)
         3.  [Testcase: linked-list]<!--(03.Custom_Types/3.2.Enums/3.2.3.Testcase_linked-list/README.md)-->
     3. [constants]<!--(03.Custom_Types/3.3.constants/README.md)-->
 4.  [Variable Bindings]<!--(04.Variable_Bindings/README.md)-->

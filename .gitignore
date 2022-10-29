@@ -6,6 +6,7 @@
 03.Custom_Types/3.1.Structures/main
 03.Custom_Types/3.2.Enums/main
 03.Custom_Types/3.2.Enums/3.2.1.use/main
+03.Custom_Types/3.2.Enums/3.2.2.C-like/main
 
 10.Modules/10.1.visibility/main
 10.Modules/10.2.struct_visibility/main
@@ -16,4 +17,3 @@
 11.Crates/11.1.Creating_a_library/libapple.rlib
 11.Crates/11.1.Creating_a_library/libsome_file.rlib
 11.Crates/11.2.Using_a_library/my_exe
-
