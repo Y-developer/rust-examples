@@ -27,6 +27,10 @@ https://www.rust-lang.org/tools/install \
     3.  [Declare first](04.Variable_Bindings/4.3.Declare_first/README.md)
     4.  [Freezing](04.Variable_Bindings/4.4.Freezing/README.md)
 5.  [Types]<!--(05.Types/README.md)-->
+    1.  [Casting]
+    2.  [Literals]
+    3.  [Inference]
+    4.  [Aliasing]
 6.  [Conversion]<!--(06.Conversion/README.md)-->
 7.  [Expressions]<!--(07.Expressions/README.md)-->
 8.  [Flow of Control]<!--(08.Flow_of_Control/README.md)-->
