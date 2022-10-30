@@ -24,7 +24,7 @@ https://www.rust-lang.org/tools/install \
 4.  [Variable Bindings](04.Variable_Bindings/README.md)
     1.  [Mutability](04.Variable_Bindings/4.1.Mutability/README.md)
     2.  [Scope and Shadowing](04.Variable_Bindings/4.2.Scope_and_Shadowing/README.md)
-    3.  [Declare first]
+    3.  [Declare first](04.Variable_Bindings/4.3.Declare_first/README.md)
     4.  [Freezing]
 5.  [Types]<!--(05.Types/README.md)-->
 6.  [Conversion]<!--(06.Conversion/README.md)-->
