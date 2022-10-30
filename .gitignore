@@ -12,6 +12,7 @@
 04.Variable_Bindings/4.2.Scope_and_Shadowing/scope
 04.Variable_Bindings/4.2.Scope_and_Shadowing/shadow
 04.Variable_Bindings/4.3.Declare_first/main
+04.Variable_Bindings/4.4.Freezing/main
 
 10.Modules/10.1.visibility/main
 10.Modules/10.2.struct_visibility/main
