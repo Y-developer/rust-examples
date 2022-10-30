@@ -22,6 +22,10 @@ https://www.rust-lang.org/tools/install \
         3.  [Testcase: linked-list]<!--(03.Custom_Types/3.2.Enums/3.2.3.Testcase_linked-list/README.md)-->
     3. [constants]<!--(03.Custom_Types/3.3.constants/README.md)-->
 4.  [Variable Bindings](04.Variable_Bindings/README.md)
+    1.  [Mutability](04.Variable_Bindings/4.1.Mutability/README.md)
+    2.  [Scope and Shadowing]
+    3.  [Declare first]
+    4.  [Freezing]
 5.  [Types]<!--(05.Types/README.md)-->
 6.  [Conversion]<!--(06.Conversion/README.md)-->
 7.  [Expressions]<!--(07.Expressions/README.md)-->
