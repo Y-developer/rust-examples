@@ -1,4 +1,4 @@
-# 8. Flow of Control
+# 8.1. if/else
 
 **if-else** අනෙක් programming language වලට සමාන වේ. අනෙක් programming language වල මෙන් rust වලදී boolean condition එක වරහනක් තුල දැමීමට අත්‍යවශ්‍ය නොවේ.\
 එසේම සෑම if else branch එකක්ම block `{}` එකක් වේ.
