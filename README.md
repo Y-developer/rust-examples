@@ -26,8 +26,8 @@ https://www.rust-lang.org/tools/install \
     2.  [Scope and Shadowing](04.Variable_Bindings/4.2.Scope_and_Shadowing/README.md)
     3.  [Declare first](04.Variable_Bindings/4.3.Declare_first/README.md)
     4.  [Freezing](04.Variable_Bindings/4.4.Freezing/README.md)
-5.  [Types]<!--(05.Types/README.md)-->
-    1.  [Casting]
+5.  [Types](05.Types/README.md)
+    1.  [Casting](05.Types/5.1.Casting/README.md)
     2.  [Literals]
     3.  [Inference]
     4.  [Aliasing]
