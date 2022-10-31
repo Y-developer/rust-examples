@@ -32,7 +32,7 @@ https://www.rust-lang.org/tools/install \
     3.  [Inference](05.Types/5.3.Inference/README.md)
     4.  [Aliasing](05.Types/5.4.Aliasing/README.md)
 6.  [Conversion]<!--(06.Conversion/README.md)-->
-7.  [Expressions]<!--(07.Expressions/README.md)-->
+7.  [Expressions](07.Expressions/README.md)
 8.  [Flow of Control]<!--(08.Flow_of_Control/README.md)-->
 9.  [Functions]<!--(09.Functions/README.md)-->
 10. [Modules](10.Modules/README.md)
