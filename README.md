@@ -35,7 +35,7 @@ https://www.rust-lang.org/tools/install \
 7.  [Expressions](07.Expressions/README.md)
 8.  [Flow of Control](08.Flow_of_Control/README.md)
     1.  [if/else](08.Flow_of_Control/8.1.if_else/README.md)
-    2.  [loop]
+    2.  [loop](08.Flow_of_Control/8.2.loop/README.md)
         1.  [Nesting and labels]
         2.  [Returning from loops]
     3.  [while]
