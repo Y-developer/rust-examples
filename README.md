@@ -30,7 +30,7 @@ https://www.rust-lang.org/tools/install \
     1.  [Casting](05.Types/5.1.Casting/README.md)
     2.  [Literals](05.Types/5.2.Literals/README.md)
     3.  [Inference](05.Types/5.3.Inference/README.md)
-    4.  [Aliasing]
+    4.  [Aliasing](05.Types/5.4.Aliasing/README.md)
 6.  [Conversion]<!--(06.Conversion/README.md)-->
 7.  [Expressions]<!--(07.Expressions/README.md)-->
 8.  [Flow of Control]<!--(08.Flow_of_Control/README.md)-->
