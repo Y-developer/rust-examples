@@ -1,6 +1,3 @@
-# 8.3. while
-වෙනත් programming language වල මෙන්ම මෙහිදීද `while` loop එක භාවිතා කල හැක. condition එක `true` වන තෙක් loop එක තුල ඇති statement run වේ.
-```rust
 fn main() {
     // A counter variable
     let mut n = 1;
@@ -21,4 +18,3 @@ fn main() {
         n += 1;
     }
 }
-```
