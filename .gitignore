@@ -30,6 +30,7 @@
 08.Flow_of_Control/8.4.for_and_range/range_b_exclude
 08.Flow_of_Control/8.4.for_and_range/iterator_iter
 08.Flow_of_Control/8.4.for_and_range/iterator_into_iter
+08.Flow_of_Control/8.5.match/main
 
 10.Modules/10.1.visibility/main
 10.Modules/10.2.struct_visibility/main

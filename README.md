@@ -40,7 +40,7 @@ https://www.rust-lang.org/tools/install \
         2.  [Returning from loops](08.Flow_of_Control/8.2.loop/8.2.2.Returning_from_loops/README.md)
     3.  [while](08.Flow_of_Control/8.3.while/README.md)
     4.  [for and range](08.Flow_of_Control/8.4.for_and_range/README.md)
-    5.  [match]
+    5.  [match](08.Flow_of_Control/8.5.match/README.md)
         1.  [Destructuring]
         2.  [Guards]
         3.  [Binding]

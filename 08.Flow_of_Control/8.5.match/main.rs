@@ -1,6 +1,3 @@
-# 8.5. match
-වෙනත් programming language වල ඇති `switch` statement එකට සමාන ක්‍රියාවක් `match` statement එක මගින් සිදු කරයි.
-```rust
 fn main() {
     let number = 13;
     // TODO ^ Try different values for `number`
@@ -30,4 +27,3 @@ fn main() {
 
     println!("{} -> {}", boolean, binary);
 }
-```
