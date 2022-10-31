@@ -34,7 +34,7 @@ https://www.rust-lang.org/tools/install \
 6.  [Conversion]<!--(06.Conversion/README.md)-->
 7.  [Expressions](07.Expressions/README.md)
 8.  [Flow of Control](08.Flow_of_Control/README.md)
-    1.  [if/else]
+    1.  [if/else](08.Flow_of_Control/8.1.if_else/README.md)
     2.  [loop]
         1.  [Nesting and labels]
         2.  [Returning from loops]
