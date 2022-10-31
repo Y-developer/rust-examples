@@ -28,7 +28,7 @@ https://www.rust-lang.org/tools/install \
     4.  [Freezing](04.Variable_Bindings/4.4.Freezing/README.md)
 5.  [Types](05.Types/README.md)
     1.  [Casting](05.Types/5.1.Casting/README.md)
-    2.  [Literals]
+    2.  [Literals](05.Types/5.2.Literals/README.md)
     3.  [Inference]
     4.  [Aliasing]
 6.  [Conversion]<!--(06.Conversion/README.md)-->

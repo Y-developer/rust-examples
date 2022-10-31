@@ -1,11 +1,3 @@
-# 5.2. Literals
-
-සංඛ්‍යාමය literal සකස් කිරීමේදී එහි type එක අගටද යෙදිය හැක.\
-සංඛ්‍යාමය literal එකක type එක නොයොදන්නේ නම්,
-- integer `i32` ලෙසද,
-- float `f64` ලෙසද, compiler එක සලකනු ලබයි.
-
-```rust
 fn main() {
     // Suffixed literals, their types are known at initialization
     let x = 1u8;
@@ -23,4 +15,3 @@ fn main() {
     println!("size of `i` in bytes: {}", std::mem::size_of_val(&i));
     println!("size of `f` in bytes: {}", std::mem::size_of_val(&f));
 }
-```
