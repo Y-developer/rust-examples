@@ -36,7 +36,7 @@ https://www.rust-lang.org/tools/install \
 8.  [Flow of Control](08.Flow_of_Control/README.md)
     1.  [if/else](08.Flow_of_Control/8.1.if_else/README.md)
     2.  [loop](08.Flow_of_Control/8.2.loop/README.md)
-        1.  [Nesting and labels]
+        1.  [Nesting and labels](08.Flow_of_Control/8.2.loop/8.2.1.Nesting_and_labels/README.md)
         2.  [Returning from loops]
     3.  [while]
     4.  [for and range]
