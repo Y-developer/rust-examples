@@ -1,8 +1,3 @@
-# 5.3. Inference (අනුමාන කිරීම)
-
-rust වල type එක අනුමාන කිරීමේ engine (type inference engine) එක ඉතා දක්ශ වේ. යම් variable එකක් සෑදීමේදී එහි type එක නොයෙදුවට පසුව ඊට යොදන අගයන් මත variable එකේ type එක හදුනාගැනීමට inference engine එකට හැකියාව ඇත.
-
-```rust
 fn main() {
     // elem යන්න u8 එකක් බව compiler එක හොදටම දනී.
     let elem = 5u8;
@@ -25,4 +20,3 @@ fn main() {
     vec_1.push(elem);
     println!("vec_1 = {:?}", vec_1);
 }
-```

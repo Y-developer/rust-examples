@@ -16,6 +16,7 @@
 
 05.Types/5.1.Casting/main
 05.Types/5.2.Literals/main
+05.Types/5.3.Inference/main
 
 10.Modules/10.1.visibility/main
 10.Modules/10.2.struct_visibility/main
