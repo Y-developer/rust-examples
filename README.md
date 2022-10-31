@@ -33,7 +33,19 @@ https://www.rust-lang.org/tools/install \
     4.  [Aliasing](05.Types/5.4.Aliasing/README.md)
 6.  [Conversion]<!--(06.Conversion/README.md)-->
 7.  [Expressions](07.Expressions/README.md)
-8.  [Flow of Control]<!--(08.Flow_of_Control/README.md)-->
+8.  [Flow of Control](08.Flow_of_Control/README.md)
+    1.  [if/else]
+    2.  [loop]
+        1.  [Nesting and labels]
+        2.  [Returning from loops]
+    3.  [while]
+    4.  [for and range]
+    5.  [match]
+        1.  [Destructuring]
+        2.  [Guards]
+        3.  [Binding]
+    6.  [if let]
+    7.  [while let]
 9.  [Functions]<!--(09.Functions/README.md)-->
 10. [Modules](10.Modules/README.md)
     1.  [Visibility](10.Modules/10.1.visibility/README.md)
